@@ -60,27 +60,34 @@ The results are sorted in ascending order to show the weeks that generated the m
 
 This project was about useing pandas to merge and manipulate data stored in two .csv. 
 
-  a) The areas of focus on this assignment are .GROUPBY, .PIVOT & .PIVOT_TABLE
-  
-  b)
+1) The areas of focus on this assignment are .GROUPBY, .PIVOT & .PIVOT_TABLE, soorting and creating bins.
+
 
 ## Code Issues
 
-1. came upon this error: 
+1. came upon this warning:
 
-"""C:\Users\mikea\AppData\Local\Temp\ipykernel_8340\741308989.py:2: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
-  combo_df['invoce_date'] =pd.to_datetime(combo_df['invoice_date'])"""
+      a) """C:\Users\mikea\AppData\Local\Temp\ipykernel_8340\741308989.py:2: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format. 
+      combo_df['invoce_date'] =pd.to_datetime(combo_df['invoice_date'])"""
 
-Teach, gave me a hint on how to format the date, and after a few iterations of methods, "(... , format = 'mixed')  in order to return a: "dtype('<M8[ns]')"
-The error message gave me that one after I tried to "ISO8601" it." was the winner.
+      b) Teach, gave me a hint on how to format the date, and after a few iterations of methods, "(... , format = 'mixed')  in order to return a: "dtype('<M8[ns]')"
 
-2.
-    
-3.
+      c) The error message gave me that one after I tried to "ISO8601" it." was the winner.
 
-4.
-   
-5. 
+2. Since most of this assignment hadn't been covered in class, hee are the GPT prompts I used to understand what was being asked:
+
+        a) "for two concacted DFs, walk me through creating  a Pivot table. don't give me code, explain the process to me and what it is doing."
+
+       b) "convert a DF to datetime data type."
+
+       c) "check for null values in a DF"
+
+       d) "how do you combine two dataframes, is it the .merge function?"
+
+       e) "explain the differences between .merge(), .concat() & .join()" 
+
+
+3. Most errors encountered involved misnaming DF, Column names and standard typos.
 
 ## Learning and Improvement
 
@@ -88,7 +95,9 @@ The error message gave me that one after I tried to "ISO8601" it." was the winne
 - Utilized extensive notes in Notepad for code comparison, transferring old code to Visual Studio to validate and debug line by line.
 - Implemented "print( no error above this line)" statements to systematically isolate and address errors.
 - Leveraged two ChatGPT prompts to gain a better understanding of why my code wasn't working.
-- attended the weekend study group, and we collaborated and tutored eachother on Parts 1-3.
+- Also used code specific prompts (listed above) to show me, what function i needed to use and how to determine the best optiion. 
+- No code was copied directly from gpt or any classmate.
+- Attended office hours, to ask for clarification.
 
 ## Reflection and Future Focus
 
