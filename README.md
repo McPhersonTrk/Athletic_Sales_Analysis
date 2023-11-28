@@ -183,8 +183,7 @@ Please tell me what you're working on, and let's walk through the solution toget
 ```
 </details>
 
-Write a brief 2-3 sentence summary of your findings. (10 points)
 
-  This is the content that can be expanded or collapsed.
+
 
 </details>
