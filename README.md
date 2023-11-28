@@ -59,11 +59,20 @@ The results are sorted in ascending order to show the weeks that generated the m
 ## Overview
 
 This project was about useing pandas to merge and manipulate data stored in two .csv. 
-  a)
+
+  a) The areas of focus on this assignment are .GROUPBY, .PIVOT & .PIVOT_TABLE
+  
+  b)
 
 ## Code Issues
 
-1. .
+1. came upon this error: 
+
+"""C:\Users\mikea\AppData\Local\Temp\ipykernel_8340\741308989.py:2: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  combo_df['invoce_date'] =pd.to_datetime(combo_df['invoice_date'])"""
+
+Teach, gave me a hint on how to format the date, and after a few iterations of methods, "(... , format = 'mixed')  in order to return a: "dtype('<M8[ns]')"
+The error message gave me that one after I tried to "ISO8601" it." was the winner.
 
 2.
     
